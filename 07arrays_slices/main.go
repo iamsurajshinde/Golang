@@ -43,5 +43,8 @@ func main() {
 	sort.Ints(values)
 	fmt.Println(values)
 	fmt.Println(sort.IntsAreSorted(values))
+	index := 2
+	values = append(values[:index], values[index+1:]...)
+	fmt.Println(values)
 
 }
